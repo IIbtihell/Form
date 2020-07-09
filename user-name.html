@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login form</title>
+    <link rel="stylesheet"type="text/css"href="user.css">
+</head>
+<body>
+    <div id="contact-form">
+        <img src="ph2.jpg" id="lo">
+        <h2>Tip calculator</h2>
+        <form>
+            <p>Bill:</p>
+            <input type="text" name="" placeholder="Enter bill here" id="Bill"><br>
+            <p>Service quality:</p><br>
+            <select>
+             <option>Excellent %30</option>
+             <option>Medium %15</option>
+             <option>Low %5</option>
+            </select><br>
+            <p>Number of people:</p>
+            <input type="text" name="" placeholder="Put number here">
+            <button class="btn" onclick="welcome()">Calculate</button>   			
+        
+        </form>
+    </div>
+    <script type="text/javascript">
+        function welcome() {
+            var Bill= document.getElementById("Bill").value;
+            newBill= Number(Bill);
+            alert(newBill + 4.5);
+
+        }
+    </script>
+</body>
+</html>    
